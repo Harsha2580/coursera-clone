@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(to left bottom, #f1f1f1, #e0e0e0);
+}
+#head {
+    margin-bottom: 60px;
+}
+#logo{ 
+    color: blue;
+    font-size: 40px;
+    margin-top: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input.largerCheckbox {
+    width: 17px;
+    height: 17px;
+}
+#Explore,#search {
+    background-color: blue;
+    color: aliceblue;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#input {
+    height: 30px;
+    margin-top: 10px;
+    
+}
+
+#filter {
+    margin-right: 150px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.cards {
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 500px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.cards:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transition: all 1000ms ease;
+}
+
+.header {
+    float:left;
+}
+
+p {
+    padding-left: 12px;
+    padding-right: 5px;
+}
