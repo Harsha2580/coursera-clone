@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to left bottom, #f1f1f1, #e0e0e0);
+    background: linear-gradient(to left bottom, #f1f1f1, #d0d0d0);
 }
 #head {
     margin-bottom: 60px;
@@ -50,7 +50,11 @@ input.largerCheckbox {
 .header {
     float:left;
 }
-
+.clear {
+    padding-top: 50px;
+    clear: both;
+    text-align: center;
+}
 p {
     padding-left: 12px;
     padding-right: 5px;

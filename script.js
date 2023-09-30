@@ -24,7 +24,10 @@ function filter(){
   if(!d.checked && !e.checked && !f.checked){
     time =true;
   }
-  if(time){
+  if(lev && time){
+    ans += ibm+meta+full;
+  }
+  else if(time){
     if(a.checked && b.checked && c.checked){
       ans += ibm+meta+full;
     }
