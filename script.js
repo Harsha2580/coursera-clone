@@ -6,60 +6,80 @@ var meta = document.getElementById("meta").innerHTML;
 meta = '<div id ="meta" class = "header cards">' + meta + '</div>';
 var full = document.getElementById("full").innerHTML;
 full = '<div id ="full" class = "header cards">' + full + '</div>';
-function Beginner(){
-    var checkBox = document.getElementById("Beginner");
-    if (checkBox.checked == true){
-        text.innerHTML = "";
-        text.innerHTML = ibm;
-      } else {
-        text.innerHTML = def;
-      }
-}
-function Intermediate(){
-    var checkBox = document.getElementById("Intermediate");
-    if (checkBox.checked == true){
-        text.innerHTML = "";
-        text.innerHTML = meta;
-      } else {
-        text.innerHTML = def;
-      }
-}
-function Advanced(){
-    var checkBox = document.getElementById("Advanced");
-    if (checkBox.checked == true){
-        text.innerHTML = "";
-        text.innerHTML = full;
-      } else {
-        text.innerHTML = def;
-      }
-}
 
-function Weeks(){
-    var checkBox = document.getElementById("Weeks");
-    if (checkBox.checked == true){
-        text.innerHTML = "";
-        text.innerHTML = ibm;
-      } else {
-        text.innerHTML = def;
-      }
-}
-function Months(){
-    var checkBox = document.getElementById("Months");
-    if (checkBox.checked == true){
-        text.innerHTML = "";
-        text.innerHTML = full;
-      } else {
-        text.innerHTML = def;
-      }
-}
-function moreMonths(){
-    var checkBox = document.getElementById("moreMonths");
-    if (checkBox.checked == true){
-        text.innerHTML = "";
-        text.innerHTML = meta;
-      } else {
-        text.innerHTML = def;
-      }
+function filter(){
+  var ans = "";
+  text.innerHTML = "";
+  var a = document.getElementById("Beginner");
+  var b = document.getElementById("Intermediate");
+  var c = document.getElementById("Advanced");
+  var d = document.getElementById("Weeks");
+  var e = document.getElementById("Months");
+  var f = document.getElementById("moreMonths");
+  var lev = false;
+  var time = false;
+  if(!a.checked && !b.checked && !c.checked){
+    lev =true;
+  }
+  if(!d.checked && !e.checked && !f.checked){
+    time =true;
+  }
+  if(time){
+    if(a.checked && b.checked && c.checked){
+      ans += ibm+meta+full;
+    }
+    else if(a.checked && b.checked && !c.checked){
+      ans += ibm+meta;
+    }
+    else if(a.checked && !b.checked && c.checked){
+      ans += ibm+full;
+    }
+    else if(!a.checked && b.checked && c.checked){
+      ans += meta+full;
+    }
+    else if(a.checked && !b.checked && !c.checked){
+      ans += ibm;
+    }
+    else if(!a.checked && b.checked && !c.checked){
+      ans += meta;
+    }
+    else if(!a.checked && !b.checked && c.checked){
+      ans += full;
+    }
+  }
+  else if(lev){
+    if(d.checked && e.checked && f.checked){
+      ans += ibm+full+meta;
+    }
+    else if(d.checked && e.checked && !f.checked){
+      ans += ibm+full;
+    }
+    else if(d.checked && !e.checked && f.checked){
+      ans += ibm+meta;
+    }
+    else if(!d.checked && e.checked && f.checked){
+      ans += meta+full;
+    }
+    else if(d.checked && !e.checked && !f.checked){
+      ans += ibm;
+    }
+    else if(!d.checked && e.checked && !f.checked){
+      ans += full;
+    }
+    else if(!d.checked && !e.checked && f.checked){
+      ans += meta;
+    }
+  }
+  if(a.checked && d.checked){
+    ans += ibm;
+  }
+  if(b.checked && f.checked){
+    ans += meta;
+  }
+  if(c.checked && e.checked){
+    ans += full;
+  }
+  text.innerHTML = ans;
 }
 
 function search(){
