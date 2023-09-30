@@ -1,19 +1,23 @@
 body {
     background: linear-gradient(to left bottom, #f1f1f1, #d0d0d0);
 }
+
 #head {
     margin-bottom: 60px;
 }
+
 #logo{ 
     color: blue;
     font-size: 40px;
     margin-top: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 input.largerCheckbox {
     width: 17px;
     height: 17px;
 }
+
 #Explore,#search {
     background-color: blue;
     color: aliceblue;
@@ -22,6 +26,7 @@ input.largerCheckbox {
     margin-left: 20px;
     margin-right: 20px;
 }
+
 #input {
     height: 30px;
     margin-top: 10px;
@@ -42,6 +47,7 @@ input.largerCheckbox {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
+
 .cards:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     transition: all 1000ms ease;
@@ -50,12 +56,14 @@ input.largerCheckbox {
 .header {
     float:left;
 }
-.clear {
-    padding-top: 50px;
-    clear: both;
-    text-align: center;
-}
+
 p {
     padding-left: 12px;
     padding-right: 5px;
+}
+
+.clear {
+    padding-top: 51px;
+    clear: both;
+    text-align: center;
 }
