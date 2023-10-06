@@ -11,6 +11,8 @@ body {
     font-size: 40px;
     margin-top: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
 }
 
 input.largerCheckbox {
@@ -18,20 +20,37 @@ input.largerCheckbox {
     height: 17px;
 }
 
-#Explore,#search {
+#Explore, #search {
     background-color: blue;
     color: aliceblue;
-    font-size: 25px;
+    font-size: 20px; 
+    padding: 5px 20px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#Explore:hover, #search:hover {
+    background-color: darkblue; 
+    transform: scale(1.05); 
 }
 
 #input {
-    height: 30px;
+    height: 33px; 
     margin-top: 10px;
-    
+    font-size: 14px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    transition: border-color 0.3s ease; 
 }
+
+#input:focus {
+    border-color: blue; 
+}
+
 
 #filter {
     margin-right: 150px;
@@ -46,12 +65,16 @@ input.largerCheckbox {
     width: 300px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 16px;
+    overflow: hidden; 
 }
 
 .cards:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-    transition: all 1000ms ease;
+    transform: scale(1.05); 
 }
+
 
 .header {
     float:left;
@@ -67,3 +90,9 @@ p {
     clear: both;
     text-align: center;
 }
+
+h3 {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
+}
+
