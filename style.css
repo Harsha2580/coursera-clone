@@ -2,10 +2,6 @@ body {
     background: linear-gradient(to left bottom, #f1f1f1, #d0d0d0);
 }
 
-#head {
-    margin-bottom: 60px;
-}
-
 #logo{ 
     color: blue;
     font-size: 40px;
