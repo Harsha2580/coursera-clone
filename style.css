@@ -11,6 +11,10 @@ body {
     font-weight: bold;
 }
 
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 input.largerCheckbox {
     width: 17px;
     height: 17px;
@@ -19,6 +23,7 @@ input.largerCheckbox {
 #Explore, #search {
     background-color: blue;
     color: aliceblue;
+    border-radius: 6px;
     font-size: 20px; 
     padding: 5px 20px;
     margin-top: 10px;
@@ -35,7 +40,7 @@ input.largerCheckbox {
 }
 
 #input {
-    height: 33px; 
+    height: 30px; 
     margin-top: 10px;
     font-size: 14px; 
     border: 2px solid #ccc; 
@@ -46,7 +51,6 @@ input.largerCheckbox {
 #input:focus {
     border-color: blue; 
 }
-
 
 #filter {
     margin-right: 150px;
@@ -70,7 +74,6 @@ input.largerCheckbox {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     transform: scale(1.05); 
 }
-
 
 .header {
     float:left;
