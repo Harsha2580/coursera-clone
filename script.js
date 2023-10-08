@@ -1,11 +1,26 @@
 var text = document.getElementById("maincontent");
 var def = text.innerHTML;
-var ibm = document.getElementById("ibm").innerHTML;
-ibm = '<div id ="ibm" class = "header cards">' + ibm + '</div>';
-var meta = document.getElementById("meta").innerHTML;
-meta = '<div id ="meta" class = "header cards">' + meta + '</div>';
-var full = document.getElementById("full").innerHTML;
-full = '<div id ="full" class = "header cards">' + full + '</div>';
+var ibm0 = document.getElementById("ibm0").innerHTML;
+ibm0 = '<div id ="ibm0" class = "header cards">' + ibm0 + '</div>';
+var meta0 = document.getElementById("meta0").innerHTML;
+meta0 = '<div id ="meta0" class = "header cards">' + meta0 + '</div>';
+var full0 = document.getElementById("full0").innerHTML;
+full0 = '<div id ="full0" class = "header cards">' + full0 + '</div>';
+var ibm1 = document.getElementById("ibm1").innerHTML;
+ibm1 = '<div id ="ibm1" class = "header cards">' + ibm1 + '</div>';
+var meta1 = document.getElementById("meta1").innerHTML;
+meta1 = '<div id ="meta1" class = "header cards">' + meta1 + '</div>';
+var full1 = document.getElementById("full1").innerHTML;
+full1 = '<div id ="full1" class = "header cards">' + full1 + '</div>';
+var ibm2 = document.getElementById("ibm2").innerHTML;
+ibm2 = '<div id ="ibm2" class = "header cards">' + ibm2 + '</div>';
+var meta2 = document.getElementById("meta2").innerHTML;
+meta2 = '<div id ="meta1" class = "header cards">' + meta2 + '</div>';
+var full2 = document.getElementById("full2").innerHTML;
+full2 = '<div id ="full2" class = "header cards">' + full2 + '</div>';
+var ibm = ibm0 + ibm1 +ibm2;
+var meta = meta0 + meta1 + meta2;
+var full = full0 + full1 + full2;
 
 function filter(){
   var ans = "";
@@ -90,14 +105,22 @@ function search(){
     course = course.toLowerCase();
     if(course === "meta"){
         text.innerHTML = "";
-        text.innerHTML = meta;
+        text.innerHTML = meta0 + full1 + meta1;
     }
     else if(course === "ibm"){
         text.innerHTML = "";
-        text.innerHTML = ibm;
+        text.innerHTML = ibm0 + ibm2; 
     }
     else if(course === "johns hopkins"){
         text.innerHTML = "";
-        text.innerHTML = full;
+        text.innerHTML = full0;
+    }
+    else if(course === "google"){
+      text.innerHTML = "";
+      text.innerHTML = meta2;
+    }
+    else if(course === "University of Michigan"){
+      text.innerHTML = "";
+      text.innerHTML = ibm1;
     }
 }

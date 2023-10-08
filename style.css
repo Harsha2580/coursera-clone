@@ -54,13 +54,15 @@ input.largerCheckbox {
 
 #filter {
     margin-right: 150px;
-    margin-left: 50px;
+    margin-left: 40px;
     font-size: 25px;
+    width: 420px;
 }
 
 .cards {
     margin-right: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
     height: 500px;
     width: 300px;
     background-color: rgb(255, 255, 255);
@@ -95,3 +97,6 @@ h3 {
     font-weight: bold; 
 }
 
+.container {
+    display: flex;
+  }
