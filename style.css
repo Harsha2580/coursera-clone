@@ -1,5 +1,26 @@
 body {
     background: linear-gradient(to left bottom, #f1f1f1, #d0d0d0);
+    margin: 0;
+    padding: 0;
+}
+
+.join{
+    text-decoration:none; 
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    border-radius: 6px;
+    font-size: 17px; 
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 13px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+.join:hover{
+    background-color: darkblue; 
+    transform: scale(1.05); 
 }
 
 #logo{ 
@@ -11,6 +32,21 @@ body {
     font-weight: bold;
 }
 
+#login{
+    text-decoration:none; 
+    float: right;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#head{
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    padding-top: 10px;
+}
+
 h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,7 +56,7 @@ input.largerCheckbox {
     height: 17px;
 }
 
-#Explore, #search {
+#Explore, #search, #join {
     background-color: blue;
     color: aliceblue;
     border-radius: 6px;
