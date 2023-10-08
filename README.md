@@ -1,3 +1,3 @@
 # coursera-clone
 
-[Click here](https://harsha2580.github.io/coursera-clone/) to view thw website.
+[Click here](https://harsha2580.github.io/coursera-clone/) to view the website.
